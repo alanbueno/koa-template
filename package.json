@@ -1,0 +1,41 @@
+{
+  "name": "koa-template",
+  "version": "0.0.1",
+  "description": "A simple koa api example",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "standard --verbose | snazzy",
+    "precommit": "npm run lint",
+    "prepush": "npm test",
+    "fixcode": "standard --fix"
+  },
+  "keywords": [
+    "api",
+    "koa.js",
+    "node.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alanbueno/koa-template.git"
+  },
+  "author": "Alan Bueno",
+  "license": "ISC",
+  "engines": {
+    "node": "8.11.2",
+    "npm": "6.1.0"
+  },
+  "devDependencies": {
+    "husky": "^1.0.0-rc.8",
+    "nyc": "^12.0.2",
+    "snazzy": "^7.1.1",
+    "standard": "^11.0.1",
+    "supertest": "^3.1.0"
+  },
+  "dependencies": {
+    "config": "^1.30.0",
+    "koa": "^2.5.1",
+    "koa-bodyparser": "^4.2.1",
+    "koa-router": "^7.4.0"
+  }
+}
