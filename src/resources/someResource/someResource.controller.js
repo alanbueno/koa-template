@@ -1,10 +1,10 @@
-const Joi = require('joi')
-const config = require('config')
-
 function somePostHandler (ctx) {
-  const basePath = config.application.basePath
-  console.log(basePath)
-  Joi.object()
+  ctx.body = {
+    first: 'Test',
+    second: 'Another test',
+    number: 1,
+    flag: true
+  }
 }
 
 module.exports.somePostHandler = somePostHandler

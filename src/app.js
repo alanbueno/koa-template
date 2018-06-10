@@ -1,8 +1,12 @@
 const Koa = require('koa')
 const app = new Koa()
+const bodyParser = require('koa-bodyparser')
 
-app.use(require('koa-bodyparser'))
+app.use(bodyParser({ enableTypes: 'json' }))
 
-app.use(require('./routes'))
+app.use(require('./middleware/response-header'))
+app.use(require('./middleware/error-handler'))
+
+require('./routes')(app)
 
 module.exports = app

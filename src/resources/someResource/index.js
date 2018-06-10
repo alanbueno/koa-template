@@ -4,4 +4,4 @@ const controller = require('./someResource.controller')
 
 router.post('/somePost', controller.somePostHandler)
 
-module.exports.router = router
+module.exports = router

@@ -1,7 +1,7 @@
 const router = require('koa-router')()
-const pjson = require('../../package.json')
+const pjson = require('../package.json')
 
-module.exports = (app) => {
+module.exports = app => {
   const exampleResource = require('./resources/someResource')
 
   router.get('/', ctx => {
@@ -17,9 +17,9 @@ module.exports = (app) => {
   })
 
   // health check
-  router.get('/ping', ctx => {
+  router.get('/ping', async ctx => {
     try {
-      ctx.body = 'Ok'
+      ctx.body = 'pong'
       ctx.status = 200
     } catch (err) {
       ctx.status = 500
