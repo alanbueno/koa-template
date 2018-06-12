@@ -12,5 +12,7 @@ module.exports = async (ctx, next) => {
     const boomError = Boom.boomify(error, { statusCode: ctx.status })
 
     ctx.body = boomError.data || boomError.output.payload
+
+    ctx.app.emit('error', boomError)
   }
 }

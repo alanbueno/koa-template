@@ -54,6 +54,9 @@ typings/
 # Yarn Integrity file
 .yarn-integrity
 
+# VsCode
+.vscode/launch.json
+
 # dotenv environment variables file
 .env
 
