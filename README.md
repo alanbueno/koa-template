@@ -4,7 +4,7 @@ A simple/clean Koa template with basic resources to start your koa api
 koa-template is a basic Restfull API template build on top of koa.js framework.
 
 ## Ready, set, go!
-Download the dependencies, create your SentryProject on `https://sentry.io/`, and run, just like that!
+Download the dependencies, create your SentryProject on [https://sentry.io/](https://sentry.io/), and run, just like that!
 
 Clone the repo:
 `https://github.com/alanbueno/koa-template`
@@ -29,8 +29,8 @@ You can set port on config file, if not, default is 3001.
 
 Example: http://localhost:3001/
   - Method: GET
-  - Host: "http://localhost:3001/"
-  - Path: "/"
+  - Host: http://localhost:3001
+  - Path: '/'
 
 Shoud return just:
 ```
@@ -43,8 +43,8 @@ ___
 
 Example: http://localhost:3001/ping
   - Method: GET
-  - Host: "http://localhost:3001/"
-  - Path: "/ping"
+  - Host: http://localhost:3001
+  - Path: '/ping'
 
 Health Check shoud return just:
 ```
