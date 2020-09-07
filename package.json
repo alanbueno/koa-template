@@ -30,7 +30,7 @@
     "husky": "^1.0.0-rc.8",
     "nyc": "^15.1.0",
     "snazzy": "^8.0.0",
-    "standard": "^14.3.3",
+    "standard": "^14.3.4",
     "supertest": "^4.0.2"
   },
   "dependencies": {
