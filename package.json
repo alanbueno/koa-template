@@ -31,7 +31,7 @@
     "nyc": "^15.1.0",
     "snazzy": "^9.0.0",
     "standard": "^16.0.2",
-    "supertest": "^6.0.1"
+    "supertest": "^6.1.1"
   },
   "dependencies": {
     "boom": "^7.3.0",
