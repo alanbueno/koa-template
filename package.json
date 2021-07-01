@@ -27,7 +27,7 @@
     "npm": "6.1.0"
   },
   "devDependencies": {
-    "husky": "^4.3.0",
+    "husky": "^7.0.0",
     "nyc": "^15.1.0",
     "snazzy": "^9.0.0",
     "standard": "^16.0.2",
